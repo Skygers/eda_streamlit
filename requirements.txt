@@ -8,3 +8,4 @@ seaborn
 PySastrawi
 wordcloud
 plotly
+openpyxl
