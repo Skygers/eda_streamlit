@@ -4,6 +4,7 @@ matplotlib
 scikit-learn
 emoji
 nltk
+nltk.download('stopwords')
 seaborn
 PySastrawi
 wordcloud
