@@ -8,6 +8,7 @@ from datetime import datetime
 import nltk
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from collections import Counter
