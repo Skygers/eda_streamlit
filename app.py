@@ -49,6 +49,8 @@ def preprocess_text(text):
         text = emoji.replace_emoji(text, replace='')
         text = re.sub(r'[^a-zA-Z\s]', '', text)
         tokens = tokenizer.tokenize(text)
+        tokens = [word for word in tokens if word not in stop_words]
+        tokens = [stemmer.stem(word) for word in tokens]
         return ' '.join(tokens)
     return ''
 
