@@ -41,6 +41,8 @@ if 'dataset' not in st.session_state:
     st.session_state.dataset = None
 
 tokenizer = RegexpTokenizer(r'\w+')
+stop_words = set(stopwords.words('indonesian'))
+stemmer = StemmerFactory().create_stemmer()
 
 def preprocess_text(text):
     """Clean and preprocess text."""
